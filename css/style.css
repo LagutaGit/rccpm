@@ -294,12 +294,19 @@
   .hero {
     background: var(--primary-color);
   }
+  .hero-content{
+    padding: 50px 0;
+    /* margin: -4px 0; */
+    margin-bottom: -200px;
+    
+  }
+  
   
   .ul-wwc {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(50%);
+   
   }
   
   .li-wwc {
@@ -313,7 +320,7 @@
     background: var(--text-light);
     flex: 1;
     min-width: 180px;
-    max-width: 280px;
+    max-width: 380px;
     height: 220px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; /* Для позиционирования псевдоэлемента */
@@ -370,6 +377,13 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
+  .blocks-hero-what-we-can{
+    transform: translateY(-15%);
+  }
+
+  .main-content{
+    
+  }
   
   .block-wrapper-wwc p {
     padding-top: 20px;
@@ -377,7 +391,7 @@
   
   .service-description {
     font-size: 48px;
-    padding: 10% 0 45px 0;
+    padding: 6% 0 10px 0;
   }
   
   .text-sppimsp {
@@ -416,6 +430,27 @@
   
   .fs-36 {
     font-size: 36px;
+  }
+
+
+   /*slider*/
+
+   .single-slider {
+    min-width: 90%; /* Слайдер не выходит за пределы контейнера */
+    margin: 0 auto; /* Центрирование */
+  }
+
+  .single-slider img {
+    width: 100%; /* Изображение занимает всю ширину слайдера */
+    height: auto; /* Сохраняет пропорции */
+    object-fit: cover; /* Изображение заполняет контейнер без искажений */
+  }
+
+  /* Опционально: ограничение максимальной ширины для больших экранов */
+  @media (min-width: 1200px) {
+    .single-slider {
+      max-width: 1200px; /* Максимальная ширина слайдера */
+    }
   }
   
   /* News */
