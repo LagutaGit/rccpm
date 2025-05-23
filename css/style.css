@@ -709,3 +709,61 @@
   }
   
  
+
+
+
+/*Вторая страница*/
+
+
+        .accordion {
+            max-width: 600px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .accordion-question {
+            background-color: #f4f4f4;
+            padding: 15px;
+            cursor: pointer;
+            margin: 0;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .accordion-question:hover {
+            background-color: #e0e0e0;
+        }
+
+        .accordion-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 15px;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background-color: #fff;
+        }
+
+        .accordion-answer p {
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .accordion-item.active .accordion-answer {
+            max-height: 200px; /* Установите значение, достаточное для контента */
+            padding: 15px;
+        }
+
+        .accordion-question::after {
+            content: '+';
+            position: absolute;
+            right: 15px;
+            font-size: 20px;
+        }
+
+        .accordion-item.active .accordion-question::after {
+            content: '−';
+        }
+    
