@@ -216,8 +216,8 @@
   }
   
   .search-btn {
-    background-color: var(--accent-color);
-    color: var(--text-dark);
+
+    color: #fff;
     padding: 8px 12px;
     border-radius: 0 4px 4px 0;
     font-weight: 500;
@@ -469,6 +469,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 16px;
+    margin-top: 25px;
   }
   
   .full-news{
@@ -481,7 +482,7 @@
 
   }
   .full-news:hover{
-    background: #007d00;
+    background: #017333;
     color: #fff;
     transition: 0.3s ease;
   }
@@ -503,7 +504,7 @@
   }
   .li-news a {
     padding: 10px;
-    font-size: 36px;
+    font-size: 22px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -793,6 +794,11 @@
   border: 2px solid #017333;
   border-radius: 15px;
 }
+.btnnn-2:hover{
+  background: #017333;
+  transition: 0.3s ease;
+  color: #fff;
+}
 
 /*recomendations*/
 
@@ -824,7 +830,8 @@
 }
 
 .accordion-item {
-    border-bottom: 1px solid #ddd;
+    /*border-bottom: 1px solid #ddd;*/
+    margin-bottom: 1px;
 }
 
 .accordion-question {
@@ -835,6 +842,7 @@
     font-size: 14px;
     position: relative;
     color: #fff;
+    border-radius: 10px;
 }
 
 .accordion-question:hover {
@@ -869,4 +877,53 @@
 
 .accordion-item.active .accordion-question::after {
     content: '−';
+}
+
+
+/*Коррекционная реабилитация*/
+
+.kor-rab{
+  margin-top: 25px;
+}
+
+.mt-25{
+  margin-top: 25px;
+}
+
+.block-reabolitations-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки равной ширины */
+  grid-template-rows: auto; /* 1 строка */
+  gap: 10px; /* Отступ между элементами */
+}
+
+.block-reab{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: left;
+}
+
+
+
+.scheme-top, .scheme-bottom{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.block-scheme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.block-scheme img{
+  padding-bottom: 15px;
 }

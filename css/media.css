@@ -2,7 +2,7 @@
  @media (max-width: 1200px) {
     .main-nav ul {
       gap: 15px;
-      margin-top: 25px;
+      margin-top: 35px;
     }
   
     .main-nav a {
@@ -61,7 +61,7 @@
       z-index: 1000;
       position: relative;
     }*/
-    
+
     .mobile-menu-btn {
       display: flex;
       text-align: end;
@@ -180,6 +180,17 @@
   .block-recomend-text {
     padding: 15px;
     font-size: 20px;
+  }
+  /*corrab3*/
+
+  .block-reabolitations-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 колонки равной ширины */
+    grid-template-rows: auto; /* 1 строка */
+    gap: 10px; /* Отступ между элементами */
+  }
+  .block-reab{
+    font-size: 14px;
   }
 
   }
