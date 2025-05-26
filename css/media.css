@@ -2,6 +2,7 @@
  @media (max-width: 1200px) {
     .main-nav ul {
       gap: 15px;
+      margin-top: 25px;
     }
   
     .main-nav a {
@@ -54,12 +55,21 @@
 
     
   
-    .mobile-menu-btn {
+    /*.mobile-menu-btn {
       display: block;
       text-align: end;
       z-index: 1000;
       position: relative;
-    }
+    }*/
+    
+    .mobile-menu-btn {
+      display: flex;
+      text-align: end;
+      z-index: 1000;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+  }
   
     h1 {
       font-size: 2.2rem;
