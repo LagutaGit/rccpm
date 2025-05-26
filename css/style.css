@@ -47,7 +47,7 @@
     list-style: disc;
   }
   .li {
-    margin-left: 50px;
+    margin-left: 25px;
   }
   
   img {
@@ -93,7 +93,7 @@
     padding: 15px 13px;
     margin: 0;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-dark);
     text-align: left;
     background: transparent;
@@ -713,9 +713,7 @@
 
 
         .accordion {
-            max-width: 600px;
-            margin: 20px auto;
-            font-family: Arial, sans-serif;
+
         }
 
         .accordion-item {
@@ -723,7 +721,7 @@
         }
 
         .accordion-question {
-            background-color: #f4f4f4;
+            background-color: #e6f0fa;
             padding: 15px;
             cursor: pointer;
             margin: 0;
@@ -733,6 +731,7 @@
 
         .accordion-question:hover {
             background-color: #e0e0e0;
+            transition: 0.3s ease;
         }
 
         .accordion-answer {
@@ -778,13 +777,15 @@
 .grid-item {
   background-color: #e6f0fa; /* Цвет блоков */
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   box-sizing: border-box;
   font-size: 14px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  /*align-items: center; */
+  align-items: self-start;
+
   flex-direction: column;
 }
 
@@ -792,7 +793,7 @@
 .grid-item:nth-child(1) {
   grid-column: 1 / 2; /* Занимает 1-й столбец */
   grid-row: 1 / 4; /* Занимает все 3 строки */
-  font-size: 24px;
+  font-size: 21px;
   justify-content: flex-start;
 }
 
