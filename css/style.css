@@ -49,6 +49,10 @@
   .li {
     margin-left: 25px;
   }
+
+  .li-2{
+    margin-left: 50px;
+  }
   
   img {
     max-width: 100%;
@@ -711,58 +715,15 @@
 
 /*Вторая страница*/
 
+.pmpk{
+  margin: 25px 0;
+}
 
-        .accordion {
+.block-grid {
+  margin-top: 25px;
+}
 
-        }
 
-        .accordion-item {
-            border-bottom: 1px solid #ddd;
-        }
-
-        .accordion-question {
-            background-color: #e6f0fa;
-            padding: 15px;
-            cursor: pointer;
-            margin: 0;
-            font-size: 16px;
-            position: relative;
-        }
-
-        .accordion-question:hover {
-            background-color: #e0e0e0;
-            transition: 0.3s ease;
-        }
-
-        .accordion-answer {
-            max-height: 0;
-            overflow: hidden;
-            padding: 0 15px;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            background-color: #fff;
-        }
-
-        .accordion-answer p {
-            margin: 15px 0;
-            font-size: 14px;
-        }
-
-        .accordion-item.active .accordion-answer {
-            max-height: 200px; /* Установите значение, достаточное для контента */
-            padding: 15px;
-        }
-
-        .accordion-question::after {
-            content: '+';
-            position: absolute;
-            right: 15px;
-            font-size: 20px;
-        }
-
-        .accordion-item.active .accordion-question::after {
-            content: '−';
-        }
-    
 
 .grid-container {
   display: grid;
@@ -831,4 +792,81 @@
   padding: 10px 30px;
   border: 2px solid #017333;
   border-radius: 15px;
+}
+
+/*recomendations*/
+
+.card-recomendation{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #B9B9B9;
+  border-radius: 10px;
+}
+.card-recomendation img {
+  border-radius: 10px;
+}
+.block-recomend-text{
+  padding: 55px;
+  font-size: 24px;
+
+}
+
+.block-rec-1{
+  margin-top: 25px;
+}
+
+.faq{
+  margin-top: 25px;
+}
+
+.accordion {
+  margin-top: 25px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-question {
+    background: var(--primary-color);
+    padding: 15px;
+    cursor: pointer;
+    margin: 0;
+    font-size: 14px;
+    position: relative;
+    color: #fff;
+}
+
+.accordion-question:hover {
+    background-color: #e0e0e0;
+    transition: 0.3s ease;
+}
+
+.accordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #fff;
+}
+
+.accordion-answer p {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.accordion-item.active .accordion-answer {
+    max-height: 200px; /* Установите значение, достаточное для контента */
+    padding: 15px;
+}
+
+.accordion-question::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+}
+
+.accordion-item.active .accordion-question::after {
+    content: '−';
 }
