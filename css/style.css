@@ -882,8 +882,28 @@
 
 /*Коррекционная реабилитация*/
 
+.paginations{
+  display: flex;
+  justify-content: center;
+}
+.paginations a{
+  padding-right: 10px;
+}
+
+.filter{
+  display: flex;
+}
+
+.filter button{
+  margin-right: 20px;
+}
+
 .kor-rab{
   margin-top: 25px;
+}
+
+.mt-10{
+  margin-top: 10px;
 }
 
 .mt-25{
@@ -929,3 +949,39 @@
   padding-bottom: 15px;
 }
 
+
+
+/*Шаблон внутри наполнение*/
+
+.wrapper{
+  margin-top: 25px;
+}
+
+.block-about-inner-main-text{
+  margin-top: 25px;
+}
+
+.block-about-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures both image and text stretch to the same height */
+  width: 100%; /* Full width of the container */
+}
+
+.block-about-preview img {
+  width: 50%; /* Image takes exactly 50% of the container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Scales image to cover the area, cropping if necessary */
+  object-position: center; /* Centers the image within its container */
+  max-height: 400px; /* Optional: set a max height to prevent overly tall images */
+  border-radius: 10px;
+}
+
+.about-informations {
+  width: 50%; /* Text section takes exactly 50% of the container */
+  padding: 20px; /* Adds some spacing for better appearance */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Vertically centers the content */
+  box-sizing: border-box; /* Ensures padding doesn't affect the 50% width */
+}

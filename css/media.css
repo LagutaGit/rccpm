@@ -206,7 +206,16 @@
     font-size: 8px;
     text-align: center;
   }
-
+  /*information inner*/
+  .block-about-preview {
+    display: block;
+  }
+  .block-about-preview img {
+    width: 100%;
+  }
+  .about-informations {
+    width: 100%;
+  }
   }
   
   @media (max-width: 576px) {
