@@ -72,7 +72,23 @@
     h3 {
       font-size: 1.3rem;
     }
+     /*ПМПК*/
+  .grid-container {
+    display: block;
+    }
+
+  .grid-item{
+    margin-top: 10px;
+    align-items: start;
   }
+  }
+
+
+ 
+
+
+
+
   @media (max-width: 835px) {
     .block-counts-about-works{
       display: grid;

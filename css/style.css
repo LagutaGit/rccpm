@@ -69,7 +69,6 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.5em;
     font-weight: 700;
     line-height: 1.2;
   }
@@ -80,7 +79,7 @@
   
   h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+
   }
   
   h3 {
@@ -88,9 +87,7 @@
     margin-bottom: 0.75rem;
   }
   
-  p {
-    margin-bottom: 1rem;
-  }
+
   
   .btnnn {
     padding: 15px 13px;
@@ -635,7 +632,7 @@
   }
   
   .footer-logo img {
-   
+   width: 50%;
     height: auto;
   }
   
@@ -767,3 +764,70 @@
             content: '−';
         }
     
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 столбца */
+  grid-template-rows: auto auto auto; /* 3 строки */
+  gap: 10px; /* Отступы между блоками */
+ /* max-width: 1200px;
+  margin: 0 auto;
+  height: 600px; /* Высота контейнера */
+}
+
+.grid-item {
+  background-color: #e6f0fa; /* Цвет блоков */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Расположение блоков */
+.grid-item:nth-child(1) {
+  grid-column: 1 / 2; /* Занимает 1-й столбец */
+  grid-row: 1 / 4; /* Занимает все 3 строки */
+  font-size: 24px;
+  justify-content: flex-start;
+}
+
+.grid-item:nth-child(2) {
+  grid-column: 2 / 4; /* Занимает 2-й и 3-й столбцы */
+  grid-row: 1 / 2; /* Первая строка */
+  
+}
+
+.grid-item:nth-child(3) {
+  grid-column: 4 / 5; /* Занимает 4-й столбец */
+  grid-row: 1 / 3; /* Первые 2 строки */
+  
+}
+
+.grid-item:nth-child(4) {
+  grid-column: 2 / 4; /* Занимает 2-й и 3-й столбцы */
+  grid-row: 2 / 3; /* Вторая строка */
+  
+}
+
+.grid-item:nth-child(5) {
+  grid-column: 2 / 4; /* Занимает 2-й и 3-й столбцы */
+  grid-row: 3 / 4; /* Третья строка */
+  
+}
+
+.grid-item:nth-child(6) {
+  grid-column: 4 / 5; /* Занимает 4-й столбец */
+  grid-row: 3 / 4; /* Третья строка */
+  
+}
+
+.btnnn-2{
+  padding: 10px 30px;
+  border: 2px solid #017333;
+  border-radius: 15px;
+}
