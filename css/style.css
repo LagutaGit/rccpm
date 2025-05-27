@@ -62,6 +62,7 @@
   .container {
     margin: 0 auto;
     padding: 0 10%;
+    max-width: 1600px;
   }
   
   button {
@@ -984,4 +985,64 @@
   flex-direction: column;
   justify-content: space-around; /* Vertically centers the content */
   box-sizing: border-box; /* Ensures padding doesn't affect the 50% width */
+}
+
+
+/*flex pmpk 2*/
+
+.flex-container{
+  display: flex;
+}
+
+.flex-item{
+  background: #e6f0fa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper-flex-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-1{
+  background: #e6f0fa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 350px;
+}
+
+.flex-item-2{
+    background: #e6f0fa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: ;
+}
+
+.flex-item-3{
+    background: #e6f0fa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: ;
+}
+
+.flex-item-4{
+    background: #e6f0fa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: ;
+}
+
+.flex-item-5{
+    background: #e6f0fa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: ;
+}
+
+.flex-item-6{
+    background: #e6f0fa;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: ;
 }
