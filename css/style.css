@@ -1,4 +1,13 @@
 /* Main styles */
+
+.inter-fonttt {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /*font-weight: <weight>;*/
+  font-style: normal;
+}
+
+
 :root {
     --primary-color: linear-gradient(to right, #003E1B, #00A447);
     --primary-color-2: linear-gradient(to left, #003E1B, #00A447);
@@ -32,6 +41,7 @@
     line-height: 1.6;
     background-color: #ffffff;
     /*font-family: 'Impact', Arial, sans-serif;*/
+    font-family: "Inter", sans-serif;
   }
   
   a {
@@ -62,7 +72,7 @@
   .container {
     margin: 0 auto;
     padding: 0 10%;
-    max-width: 1600px;
+    
   }
   
   button {
@@ -988,61 +998,4 @@
 }
 
 
-/*flex pmpk 2*/
 
-.flex-container{
-  display: flex;
-}
-
-.flex-item{
-  background: #e6f0fa;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.wrapper-flex-item{
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-item-1{
-  background: #e6f0fa;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: 350px;
-}
-
-.flex-item-2{
-    background: #e6f0fa;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: ;
-}
-
-.flex-item-3{
-    background: #e6f0fa;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: ;
-}
-
-.flex-item-4{
-    background: #e6f0fa;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: ;
-}
-
-.flex-item-5{
-    background: #e6f0fa;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: ;
-}
-
-.flex-item-6{
-    background: #e6f0fa;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  width: ;
-}
