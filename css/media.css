@@ -1,391 +1,336 @@
- /* Responsive Header */
- @media (max-width: 1200px) {
-    .main-nav ul {
-      gap: 15px;
-      margin-top: 35px;
-    }
-  
-    .main-nav a {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .main-nav {
-      display: none;
-    }
-  
-    .main-nav.active {
-      display: block;
-      position: absolute;
-      top: 12%;
-      left: 0;
-      width: 100%;
-      background-color: var(--text-light);
-      box-shadow: var(--shadow);
-      padding: 20px;
-      z-index: 1000;
-    }
-  
-    .main-nav.active .ul-nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .main-nav.active .dropdown {
-      width: 100%;
-    }
-  
-    .main-nav.active .btnnn {
-      width: 100%;
-      text-align: left;
-      padding: 10px;
-    }
-  
-    .main-nav.active .dropdown-menu {
-      position: static;
-      width: 100%;
-      box-shadow: none;
-      /*background-color: var(--gray-light);*/
-    }
-    .flex-menu.show{
-      display: block;
-      min-width: auto;
-    }
+/* Base Grid Styles */
+.block-sotrudniki-inner, .block-price-inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6-column grid for large screens */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    
-  
-    /*.mobile-menu-btn {
-      display: block;
-      text-align: end;
-      z-index: 1000;
-      position: relative;
-    }*/
+.sotrudnik, .price-card {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
 
-    .mobile-menu-btn {
-      display: flex;
-      text-align: end;
-      z-index: 1000;
-      position: relative;
-      justify-content: space-between;
-      align-items: center;
+.sotrudnik img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 150px;
+  border-radius: 5px;
+}
+
+.info-sotrudnik, .info-price {
+  padding: 10px;
+}
+
+.info-sotrudnik p, .info-price p {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .main-nav ul {
+    gap: 15px;
+    margin-top: 35px;
   }
-  
-    h1 {
-      font-size: 2.2rem;
-    }
-  
-    h2 {
-      font-size: 1.8rem;
-    }
-  
-    h3 {
-      font-size: 1.3rem;
-    }
-     /*ПМПК*/
-  .grid-container {
+
+  .main-nav a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Navigation */
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav.active {
     display: block;
-    }
-
-  .grid-item{
-    margin-top: 10px;
-    align-items: start;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    background-color: var(--text-light);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    z-index: 1000;
   }
+
+  .main-nav.active .ul-nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-
- 
-
-
-
-
-  @media (max-width: 835px) {
-    .block-counts-about-works{
-      display: grid;
-        grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
-        grid-template-rows: auto auto; /* Два ряда с автоматической высотой */
-        gap: 5px;
-    }
+  .main-nav.active .dropdown,
+  .main-nav.active .btnnn,
+  .main-nav.active .dropdown-menu {
+    width: 100%;
   }
-  
-  
-  @media (max-width: 768px) {
-    .contact-info {
-      gap: 10px;
-    }
-  
-    .contact-info a {
-      font-size: 0.8rem;
-    }
-  
-    .search-bar input {
-      width: 120px;
-    }
-  
-    .ul-wwc {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
-      grid-template-rows: auto auto; /* Два ряда с автоматической высотой */
-    }
-    
-    .service-description {
-      font-size: 36px;
-      padding: 20% 0 0px 0;
+
+  .main-nav.active .btnnn {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .main-nav.active .dropdown-menu {
+    position: static;
+    box-shadow: none;
+  }
+
+  .flex-menu.show {
+    display: block;
+    min-width: auto;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: end;
+    z-index: 1000;
+    position: relative;
+  }
+
+  /* Typography */
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+
+  /* Content */
+  .main-content {
+    padding: 60px 0;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .cta-block {
+    padding: 25px;
+  }
+
+  .cta-block p {
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /* Grids */
+  .block-sotrudniki-inner, .block-price-inner {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  .contact-info {
+    gap: 10px;
+  }
+
+  .contact-info a {
+    font-size: 0.8rem;
+  }
+
+  .search-bar input {
+    width: 120px;
+  }
+
+  /* Typography */
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.2rem; }
+
+  /* Content */
+  .container {
+    padding: 0 15px;
+  }
+
+  .main-content {
+    padding: 50px 0;
+  }
+
+  .service-description {
+    font-size: 36px;
+    padding: 20% 0 0 0;
   }
 
   .text-sppimsp {
     font-size: 16px;
   }
- 
-  .block-count{
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  /* Grids */
+  .ul-wwc, .block-counts-about-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+  }
+
+  .block-counts-about-works {
+    padding-top: 30px;
+  }
+
+  .block-count {
     height: 180px;
     width: 250px;
   }
-  .block-counts-about-works{
-    padding-top: 30px;
-  }
-  .fs-48 {
-    font-size: 32px;
-  }
-    .li-wwc {
-      border-radius: 10px;
-      padding: 10px 20px;
-      width: 100%;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    h2 {
-      font-size: 1.6rem;
-    }
-  
-    h3 {
-      font-size: 1.2rem;
-    }
-  
-    .container {
-      padding: 0 15px;
-    }
-  
-    .news-ul {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
-    .fs-24 {
-      font-size: 18px;
+  .news-ul {
+    grid-template-columns: repeat(2, 1fr);
   }
-  /*pmpk*/
+
+  .block-reabolitations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .block-sotrudniki-inner, .block-price-inner, .block-ploshadka-inner {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+
+  /* Specific Elements */
+  .li-wwc {
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .fs-48 { font-size: 32px; }
+  .fs-24 { font-size: 18px; }
+
   .block-recomend-text {
     padding: 15px;
     font-size: 20px;
   }
-  /*corrab3*/
 
-  .block-reabolitations-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 4 колонки равной ширины */
-    grid-template-rows: auto; /* 1 строка */
-    gap: 10px; /* Отступ между элементами */
-  }
-  .block-reab{
+  .block-reab {
     font-size: 14px;
   }
+
   .block-scheme {
     justify-content: flex-start;
     padding-left: 5px;
     padding-right: 0;
   }
 
-  .block-scheme span{
-    font-size: 12px;
-  }
-  
-  .block-scheme p{
-    font-size: 8px;
-    text-align: center;
-  }
-  /*information inner*/
+  .block-scheme span { font-size: 12px; }
+  .block-scheme p { font-size: 8px; text-align: center; }
+
+  /* Block About Preview */
   .block-about-preview {
     display: block;
   }
-  .block-about-preview img {
+
+  .block-about-preview img, .about-informations {
     width: 100%;
-  }
-  .about-informations {
-    width: 100%;
-  }
-  }
-  
-  @media (max-width: 576px) {
-    .top-header .container {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .contact-info {
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    .contact-info a {
-      font-size: 0.8rem;
-    }
-  
-    .search-bar {
-      width: 100%;
-    }
-  
-    .search-bar input {
-      width: 100%;
-    }
-  
-    h1 {
-      font-size: 1.8rem;
-    }
-  
-    h2 {
-      font-size: 1.4rem;
-    }
-  
-    h3 {
-      font-size: 1.1rem;
-    }
-  
-    .news-ul {
-      grid-template-columns: 1fr;
-    }
-    .service-description {
-      font-size: 36px;
-      padding: 20% 0 0px 0;
   }
 
-  .text-sppimsp {
-    font-size: 16px;
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
   }
-  .block-counts-about-works{
-    display: grid;
-      grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
-      grid-template-rows: auto auto; /* Два ряда с автоматической высотой */
-      gap: 5px;
+}
+
+@media (max-width: 576px) {
+  /* Header */
+  .top-header .container {
+    flex-direction: column;
+    gap: 10px;
   }
-  .block-count{
+
+  .contact-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .contact-info a {
+    font-size: 0.8rem;
+  }
+
+  .search-bar, .search-bar input {
+    width: 100%;
+  }
+
+  /* Typography */
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.1rem; }
+
+  .service-description h2 {
+    font-size: 1.6rem;
+  }
+
+  .description-text {
+    font-size: 0.95rem;
+  }
+
+  /* Content */
+  .main-content {
+    padding: 40px 0;
+  }
+
+  .cta-block {
+    padding: 20px;
+  }
+
+  .cta-block p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* Grids */
+  .news-ul {
+    grid-template-columns: 1fr;
+  }
+
+  .block-count {
     height: 150px;
     width: 180px;
   }
-  .fs-48 {
-    font-size: 28px;
-  }
-    .li-wwc {
-      border-radius: 10px;
-      padding: 5px 10px;
-      width: 100%;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    h2 {
-      font-size: 1.6rem;
-    }
-  
-    h3 {
-      font-size: 1.2rem;
-    }
-  
-    .container {
-      padding: 0 15px;
-    }
-  
-    .news-ul {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
-    .fs-24 {
-      font-size: 18px;
-  }
+  /* Specific Elements */
   .li-news {
     width: 350px;
   }
-  .li-news a{
-    font-size: 18px;
+
+  .li-news a { font-size: 18px; }
+  .li-news img { height: 180px; }
+
+  .fs-48 { font-size: 28px; }
+
+  /* Footer */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
-  .li-news img{
-    
-    height: 180px;
-  }
-  /* Responsive content */
-  @media (max-width: 992px) {
-    .main-content {
-      padding: 60px 0;
-    }
-  
-    .description-text {
-      font-size: 1rem;
-    }
-  
-    .cta-block {
-      padding: 25px;
-    }
-  
-    .cta-block p {
-      font-size: 1.1rem;
-    }
-  
-    .footer-content {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .footer-links {
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .main-content {
-      padding: 50px 0;
-    }
-  
-    .footer-links {
-      flex-direction: column;
-      gap: 30px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .main-content {
-      padding: 40px 0;
-    }
-  
-    .service-description h2 {
-      font-size: 1.6rem;
-    }
-  
-    .description-text {
-      font-size: 0.95rem;
-    }
-  
-    .cta-block {
-      padding: 20px;
-    }
-  
-    .cta-block p {
-      font-size: 1rem;
-    }
-  
-    .cta-button {
-      padding: 10px 20px;
-      font-size: 0.95rem;
-    }
-  
-    .footer-bottom {
-      flex-direction: column;
-      gap: 15px;
-      text-align: center;
-    }
+}
+
+@media (max-width: 480px) {
+  .block-sotrudniki-inner, .block-price-inner, .block-ploshadka-inner {
+    grid-template-columns: 1fr; /* 1 column */
   }
 }
