@@ -105,6 +105,10 @@
 }
 
 @media (max-width: 768px) {
+  .grid-container{
+    display: block;
+  }
+
   /* Header */
   .contact-info {
     gap: 10px;
