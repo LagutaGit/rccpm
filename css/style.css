@@ -782,7 +782,7 @@
 }
 
 .grid-item {
-  background-color: #e6f0fa; /* Цвет блоков */
+  background-color: #E0F1F4; /* Цвет блоков */
   border-radius: 10px;
   padding: 25px;
   box-sizing: border-box;
@@ -1044,11 +1044,12 @@
 }
 
 .block-about-preview img {
-  width: 50%; /* Image takes exactly 50% of the container */
+ /* width: 50%; /* Image takes exactly 50% of the container */
+  /*max-height: 400px; /* Optional: set a max height to prevent overly tall images */
   height: auto; /* Maintains aspect ratio */
   object-fit: cover; /* Scales image to cover the area, cropping if necessary */
   object-position: center; /* Centers the image within its container */
-  max-height: 400px; /* Optional: set a max height to prevent overly tall images */
+
   border-radius: 10px;
 }
 
@@ -1147,7 +1148,6 @@
   margin: 0 auto; /* Center the container */
 }
 .price-card{
-
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -1155,6 +1155,7 @@
   text-align: center;
   border: 1px solid #B9B9B9;
 }
+
 .info-card-main{
   background: #D9D9D9;
   border-radius: 10px;
@@ -1169,4 +1170,12 @@
   background:#fff;
   padding: 10px;
   border-radius: 0 0 10px 10px;
+}
+
+.info-sotrudnik, .info-price {
+  padding: 10px;
+}
+
+.info-sotrudnik p, .info-price p {
+  margin: 5px 0;
 }

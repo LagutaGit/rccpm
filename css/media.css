@@ -1,35 +1,4 @@
-/* Base Grid Styles */
-.block-sotrudniki-inner, .block-price-inner {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6-column grid for large screens */
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.sotrudnik, .price-card {
-  background-color: #f0f0f0;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.sotrudnik img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-height: 150px;
-  border-radius: 5px;
-}
-
-.info-sotrudnik, .info-price {
-  padding: 10px;
-}
-
-.info-sotrudnik p, .info-price p {
-  margin: 5px 0;
-}
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
