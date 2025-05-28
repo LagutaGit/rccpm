@@ -1063,3 +1063,45 @@
 
 
 
+/*full-programs*/
+
+.our-programs{
+  margin-top: 25px;
+}
+
+.block-about-ifno-titile-programs{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.block-title-news{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*news-and-events.html*/
+
+.filter-news-events{
+  display: flex;
+  justify-content: center;
+}
+
+.btnnn-3{
+    
+  
+  padding: 15px 13px;
+  margin: 0;
+  border: none;
+  font-size: 24px;
+  color: var(--text-dark);
+  text-align: left;
+  background: transparent;
+
+}
+
+.btnnn-3:hover {
+  color: var(--primary-solid);
+}
