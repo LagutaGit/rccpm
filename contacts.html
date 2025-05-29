@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+      <!-- Header section -->
+      <header>
+        <div class="top-header">
+          <div class="container">
+            <div class="contact-info">
+              <a href="tel:+880200555233" class="phone">
+                <i class="fas fa-phone"></i> +880 200 555 23
+              </a>
+              <a href="mailto:mailprimer.com" class="email">
+                <i class="fas fa-envelope"></i> mailprimer.com
+              </a>
+            </div>
+            <div class="search-bar">
+              <input type="text" placeholder="Поиск...">
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="main-header">
+          <div class="container">
+            <nav class="main-nav">
+              <ul class="ul-nav">
+                <li class="logo">
+                    <a href="/"><img src="./images/logo.svg" alt="РЦППМСП Логотип"></a>
+                </li>
+                <li class="dropdown">
+                  <button class="btnnn" data-dropdown="education" aria-expanded="false">
+                    Сведения об <br> образовательной <br> организации
+                  </button>
+                  <ul class="dropdown-menu flex-menu" data-dropdown="education">
+                    <div class="block-header-2-1"><li><a href="#">Основные сведения</a></li>
+                      <li><a href="#">Структура и органы управления образовательной организацией</a></li>
+                      <li><a href="#">Документы</a></li>
+                      <li><a href="#">Образование</a></li>
+                      <li><a href="#">Образовательные стандарты и требования</a></li>
+                      <li><a href="#">Руководство</a></li>
+                      <li><a href="#">Педагогический состав</a></li>
+                    </div>
+                    <div class="block-header-2-1"><li><a href="#">Платные образовательные услуги</a></li>
+                      <li><a href="#">Стипендии и меры поддержки обучающихся</a></li>
+                      <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда</a></li>
+                      <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+                      <li><a href="#">Вакантные места для приема (перевода) обучающихся</a></li>
+                      <li><a href="#">Международное сотрудничество</a></li>
+                      <li><a href="#">Организация питания в образовательной организации</a></li>
+                    </div>
+                    
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <button class="btnnn" data-dropdown="pmpk" aria-expanded="false">
+                    Психолого-медико-<br>педагогическая комиссия (ПМПК)
+                  </button>
+                  <ul class="dropdown-menu" data-dropdown="pmpk">
+                    <li><a href="./pmpk.html">Что такое ПМПК?</a></li>
+                    <li><a href="./pmpk.html">Задачи и функции комиссии</a></li>
+                    <li><a href="./pmpk.html">Порядок прохождения</a></li>
+                    <li><a href="./pmpk.html">Необходимые документы</a></li>
+                    <li><a href="./pmpk.html">Часто задаваемые вопросы (FAQ)</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <button class="btnnn" data-dropdown="rehabilitation" aria-expanded="false">
+                    Коррекционная<br> реабилитация
+                  </button>
+                  <ul class="dropdown-menu" data-dropdown="rehabilitation">
+                    <li><a href="./corrab3.html">Направления работы</a></li>
+                    <li><a href="./corrab3.html">Программы реабилитации</a></li>
+                    <li><a href="./corrab3.html">Методики и технологии</a></li>
+                    <li><a href="./corrab3.html">Успешные кейсы (по желанию)</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <button class="btnnn" data-dropdown="news" aria-expanded="false">
+                    Новости и <br> мероприятия
+                  </button>
+                  <ul class="dropdown-menu" data-dropdown="news">
+                    <li><a href="./news-and-events.html">Анонсы событий</a></li>
+                    <li><a href="./news-and-events.html">Прошедшие мероприятия (фото/отчеты)</a></li>
+                    <li><a href="./news-and-events.html">Архив новостей</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <button class="btnnn" data-dropdown="staff" aria-expanded="false">
+                    Сотрудники
+                  </button>
+                  <ul class="dropdown-menu" data-dropdown="staff">
+                    <li><a href="./sotdrudniki.html">Администрация</a></li>
+                    <li><a href="./sotdrudniki.html">Педагогический состав</a></li>
+                    <li><a href="./sotdrudniki.html">Специалисты (психологи, логопеды, дефектологи и др.)</a></li>
+                    <li><a href="./sotdrudniki.html">Вакансии</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <button class="btnnn" data-dropdown="services" aria-expanded="false">
+                    Услуги <br> центра
+                  </button>
+                  <ul class="dropdown-menu" data-dropdown="services">
+                    <li><a href="./uslugi.html">Перечень услуг с описанием</a></li>
+                    <li><a href="./uslugi.html">Прайс-лист</a></li>
+                    <li><a href="./uslugi.html">Как записаться?</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <button class="btnnn" data-dropdown="contacts" aria-expanded="false">
+                    Контакты
+                  </button>
+                  <ul class="dropdown-menu" data-dropdown="contacts">
+                    <li><a href="./contacts.html">Адрес, телефоны, email</a></li>
+                    <li><a href="./contacts.html">Карта проезда</a></li>
+                    <li><a href="./contacts.html">Форма обратной связи</a></li>
+                    <li><a href="./contacts.html">График работы</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+              <h2>РЦППМСП</h2>
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <main class="main">
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content-2">
+            <div class="slider">
+                <!-- Слайдер (добавить ваш контент) -->
+                <div class="single-slider">
+                    <div>
+                      <img src="./images/banner-6.png" alt="Slider Image">
+                    </div>
+                    <div>
+                      <img src="./images/banner-6.png" alt="Slider Image">
+                    </div>
+                    <div>
+                      <img src="./images/banner-6.png" alt="Slider Image">
+                    </div>
+                    <div>
+                      <img src="./images/banner-6.png" alt="Slider Image">
+                    </div>
+                    <div>
+                      <img src="./images/banner-6.png" alt="Slider Image">
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+      </div>
+    </section>
+    <section class="wrapper-contacts">
+        <div class="container">
+            <div class="ploshadka-sotrudniki mt-25">
+                <h2>Контакты</h2>
+                
+                <div class="contacts mt-25">
+                    <h3>Центральный офис (г. Благовещенск)</h3>
+                    <address>Адрес: <br> 675000, г. Благовещенск, ул. Ленина, д. 100</address>
+                    <p>Телефон:</p> <a href="tel:+74162550000">+7(4162)55-00-00</a>
+                    <p>Email:</p> <a href="mailto:info@rcppmosp.amur.ru">info@rcppmosp.amur.ru</a>
+                    <p>График работы:</p>
+                    <p class="indented">Пн–Пт: с 8:30 до 17:00, перерыв: 12:00–13:00</p>
+                    <ul class="ul">
+                        <li class="li">
+                            <p>Директор центра:</p>
+                            <p class="indented">Иванова Ольга Петровна</p>
+                            <p class="indented">Тел.: <a href="tel:+74162550001">+7 (4162) 55-00-01</a></p>
+                            <p class="indented">Email: <a href="mailto:director@rcppmosp.amur.ru">director@rcppmosp.amur.ru</a></p>
+                            
+                        </li>
+                        <li class="li">
+                            <p>Заместитель директора по УМР:</p>
+                            <p class="indented">Смирнов Андрей Владимирович</p>
+                            <p class="indented">Тел.: <a href="tel:+74162550002">+7 (4162) 55-00-02</a></p>
+                            <p class="indented">Email: <a href="mailto:umr@rcppmosp.amur.ru">umr@rcppmosp.amur.ru</a></p>
+                        </li>
+                        <li class="li">
+                            <p>Главный специалист по работе с семьей:</p>
+                            <p class="indented">Петрова Елена Сергеевна</p>
+                            <p class="indented">Тел.: <a href="tel:+74162550003">+7 (4162) 55-00-03</a></p>
+                            <p class="indented">Email: <a href="mailto:family@rcppmosp.amur.ru">family@rcppmosp.amur.ru</a></p>
+                        </li>
+                        <li class="li">
+                            <p>Педагоги-психологи, логопеды, дефектологи — по графику работы центра</p>
+                        </li>
+                    </ul>
+                   
+                    
+                    
+                    
+                </div>
+                <div class="contacts mt-25">
+                    <h3>Филиал №1 — г. Свободный</h3>
+                    <address>Адрес: <br> 676950, г. Свободный, ул. Комсомольская, д. 12</address>
+                    <p>Телефон: <a href="tel:+74165245678">+7 (41652) 4-56-78</a></p>
+                    <p>Email: <a href="mailto:svoboda@rcppmosp.amur.ru">svoboda@rcppmosp.amur.ru</a></p>
+                    <p>График работы:</p>
+                    <p class="indented">Пн–Пт: с 9:00 до 17:00, перерыв: 12:30–13:00</p>
+                    <ul class="ul">
+                        <li class="li">
+                            <p>Ответственный специалист:</p>
+                            <p class="indented">Начальник филиала: Алексеев Максим Николаевич</p>
+                            <p class="indented">Тел.: <a href="tel:+74165245679">+7 (41652) 4-56-79</a></p>
+                            <p class="indented">Email: <a href="mailto:alexeev@rcppmosp.amur.ru">alexeev@rcppmosp.amur.ru</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts mt-25">
+                    <h3>Филиал №2 — г. Шимановск</h3>
+                    <address>Адрес: <br> 676700, г. Шимановск, ул. Пушкина, д. 25</address>
+                    <p>Телефон: <a href="tel:+74164634567">+7 (41646) 3-45-67</a></p>
+                    <p>Email: <a href="mailto:shiman@rcppmosp.amur.ru">shiman@rcppmosp.amur.ru</a></p>
+                    <p>График работы:</p>
+                    <p class="indented">Пн–Чт: с 8:30 до 17:00, Пт: с 8:30 до 16:00</p>
+                    <ul class="ul">
+                        <li class="li">
+                            <p>Ответственный специалист:</p>
+                            <p class="indented">Руководитель направления: Кузнецова Анна Юрьевна</p>
+                            <p class="indented">Тел.: <a href="tel:+74164634568">+7 (41646) 3-45-68</a></p>
+                            <p class="indented">Email: <a href="mailto:kuznetsova@rcppmosp.amur.ru">kuznetsova@rcppmosp.amur.ru</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+
+      <!-- Footer section -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo-2.svg" alt="РЦППМСП Логотип">
+         
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="#">Перечень услуг с описанием</a></li>
+              <li><a href="#">Прайс-лист </a></li>
+              <li><a href="#">Как записаться?</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>Информация</h4>
+            <ul>
+              <li><a href="#">О центре</a></li>
+              <li><a href="#">Наши специалисты</a></li>
+              <li><a href="#">Документы</a></li>
+              <li><a href="#">Часто задаваемые вопросы</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>Контакты</h4>
+            <ul>
+              <li><a href="tel:+880200555233">+880 200 555 23</a></li>
+              <li><a href="mailto:mailprimer.com">mailprimer.com</a></li>
+              <li>г. Благовещенск, ул. Пушкина 44</li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>Режим работы</h4>
+            <ul>
+              <li>Пн-Пт: 9:00 - 18:00</li>
+              <li>Сб: 10:00 - 15:00</li>
+              <li>Вс: Выходной</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 РЦППМСП. Все права защищены.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ <!--Slider-->
+ 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script> 
+  <script>
+    document.querySelectorAll('.accordion-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                const isActive = parent.classList.contains('active');
+
+                // Закрываем все открытые элементы
+                document.querySelectorAll('.accordion-item').forEach(el => {
+                    el.classList.remove('active');
+                    el.querySelector('.accordion-answer').style.maxHeight = '0';
+                    el.querySelector('.accordion-answer').style.padding = '0 15px';
+                });
+
+                // Если элемент не был активен, открываем его
+                if (!isActive) {
+                    parent.classList.add('active');
+                    const answer = parent.querySelector('.accordion-answer');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+  </script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/slider.js"></script>
+</body>
+</html>
+
+
+
+
+

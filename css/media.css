@@ -208,6 +208,10 @@
     width: 40px;
   }
 
+  .filter-news-events{
+    display: block;
+  }
+
   .block-scheme span { font-size: 9px; }
   .block-scheme p { font-size: 7px; text-align: center; }
 
@@ -290,7 +294,7 @@
 
   /* Specific Elements */
   .li-news {
-    width: 350px;
+    width: 325px;
   }
 
   .li-news a { font-size: 18px; }
