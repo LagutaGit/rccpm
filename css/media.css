@@ -108,6 +108,9 @@
   .grid-container{
     display: block;
   }
+  .grid-item{
+    margin-top: 10px;
+  }
 
   /* Header */
   .contact-info {
