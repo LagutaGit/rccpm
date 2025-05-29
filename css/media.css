@@ -239,6 +239,9 @@
     flex-direction: column;
     gap: 30px;
   }
+  .big-text{
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 576px) {
