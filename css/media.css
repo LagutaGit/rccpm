@@ -205,10 +205,11 @@
     justify-content: flex-start;
     padding-left: 5px;
     padding-right: 0;
+    width: 40px;
   }
 
-  .block-scheme span { font-size: 12px; }
-  .block-scheme p { font-size: 8px; text-align: center; }
+  .block-scheme span { font-size: 9px; }
+  .block-scheme p { font-size: 7px; text-align: center; }
 
   /* Block About Preview */
   .block-about-preview {
