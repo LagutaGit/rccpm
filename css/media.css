@@ -102,9 +102,19 @@
   .block-sotrudniki-inner, .block-price-inner {
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
   }
+
+  .block-main-title{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .block-right{
+    display: none;
+  }
+  
   .grid-container{
     display: block;
   }
