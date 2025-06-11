@@ -806,6 +806,7 @@
   grid-row: 1 / 4; /* Занимает все 3 строки */
   font-size: 21px;
   justify-content: flex-start;
+  width: 450px;
 }
 
 .grid-item:nth-child(2) {
@@ -872,6 +873,11 @@
 
 .faq{
   margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.text-biggg{
+
 }
 
 .accordion {
