@@ -71,7 +71,7 @@
   
   .container {
     margin: 0 auto;
-    padding: 0 10%;
+    padding: 0 15%;
     
   }
   
@@ -482,7 +482,7 @@
   /* News */
   .news-ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 16px;
     margin-top: 25px;
@@ -508,22 +508,33 @@
 
   .li-news {
     border: 1px solid gray;
-    border-radius: 9px;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 320px;
+    justify-content: space-between;
+  }
+
+  .full-news{
+    padding: 0px;
   }
 
   .li-news img {
-    border-radius: 8px 8px 0 0;
+    border-radius: 4px 4px 0 0;
     width: 100%; /* Заполняет ширину контейнера */
-    height: 250px; /* Фиксированная высота для единообразия */
+    height: 180px; /* Фиксированная высота для единообразия */
     object-fit: cover; /* Заполняет область, обрезая излишки */
     object-position: center; /* Центрирует изображение */
   }
+  .li-news p{
+    padding: 0 10px;
+    font-size: 19px;
+    line-height: 20px;
+  }
   .li-news a {
-    padding: 10px;
-    font-size: 22px;
+    padding: 5px;
+    font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1115,6 +1126,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 
