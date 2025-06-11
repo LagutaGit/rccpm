@@ -1078,8 +1078,8 @@
 }
 
 .block-about-preview img {
-  width: 50%; /* Image takes exactly 50% of the container */
-  max-height: 400px; /* Optional: set a max height to prevent overly tall images 
+  width: 75%; /* Image takes exactly 50% of the container */
+  /*max-height: 400px; /* Optional: set a max height to prevent overly tall images 
   height: auto; /* Maintains aspect ratio */
   object-fit: cover; /* Scales image to cover the area, cropping if necessary */
   object-position: center; /* Centers the image within its container */
