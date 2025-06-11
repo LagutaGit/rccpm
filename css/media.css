@@ -110,7 +110,9 @@
 }
 
 @media (max-width: 768px) {
-
+  .grid-item:nth-child(1){
+    width: auto;
+  }
   .block-right{
     display: none;
   }
